@@ -81,7 +81,7 @@
 body {
   position: relative;
   overflow-x: hidden;
-  background: url("/images/boby-bg-left.png") left 38% no-repeat, url("/images/boby-bg-bottom.png") right bottom no-repeat;
+  background: url("./images/boby-bg-left.png") left 38% no-repeat, url("./images/boby-bg-bottom.png") right bottom no-repeat;
 }
 
 a {
@@ -404,7 +404,7 @@ input {
   top: -46px;
   margin-bottom: 70px;
   border-radius: 0 0 24px 24px;
-  background: url("/images/hero-bg.png") center top no-repeat;
+  background: url("./images/hero-bg.png") center top no-repeat;
   background-size: cover;
   z-index: 0;
 }
@@ -415,7 +415,7 @@ input {
 }
 @media (max-width: 768px) {
   .section-hero {
-    background: url("/images/hero-bg-390.png") center center no-repeat;
+    background: url("./images/hero-bg-390.png") center center no-repeat;
     background-size: cover;
   }
 }
@@ -424,13 +424,13 @@ input {
   display: flex;
   justify-content: space-between;
   padding-top: 90px;
-  background: url("/images/union-right.png") 91% 75% no-repeat, url("/images/union-bottom.png") 20px bottom no-repeat;
+  background: url("./images/union-right.png") 91% 75% no-repeat, url("./images/union-bottom.png") 20px bottom no-repeat;
   background-size: auto, auto;
 }
 @media (max-width: 768px) {
   .section-hero__content {
     flex-direction: column;
-    background: url("/images/union-right.png") 91% 75% no-repeat;
+    background: url("./images/union-right.png") 91% 75% no-repeat;
     background-size: auto;
   }
 }
@@ -716,13 +716,13 @@ input {
   box-shadow: 3px 2px 23px 0 rgba(51, 51, 51, 0.13);
 }
 .section-we__slide:nth-child(1) {
-  background: url("/images/we-union-left.png") 15px 15px no-repeat var(--violet-ea);
+  background: url("./images/we-union-left.png") 15px 15px no-repeat var(--violet-ea);
 }
 .section-we__slide:nth-child(2) {
   background: var(--indigo-f1);
 }
 .section-we__slide:nth-child(3) {
-  background: url("/images/we-union-right.png") 74% 85% no-repeat var(--fuchsia-a8);
+  background: url("./images/we-union-right.png") 74% 85% no-repeat var(--fuchsia-a8);
 }
 .section-we__slide:nth-child(4) {
   background: var(--indigo-f1);
