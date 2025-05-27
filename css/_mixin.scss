@@ -1,0 +1,38 @@
+@mixin section-offer-item-bg {
+    color: var(--white);
+    background: url('/images/offer-magenta-bg.png') center top no-repeat transparent;
+    background-size: cover;
+}
+
+@mixin section-offer-item-color {
+    color: var(--indigo-f1);
+    background-color: var(--grey-f9);
+}
+
+@mixin we-arrow {
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    margin-top: 46px;
+    border-radius: 50%;
+    border: 2px solid var(--blue-ef);
+    background-color: var(--white);
+    transform: translateY(-50%);
+
+    & svg {
+        width: 27px;
+        height: 16px;
+
+        & use {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &::after {
+        content: '';
+    }
+}

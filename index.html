@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест Морозов</title>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/swiper-bundle.min.js"></script>
+    <script defer src="./js/script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <ul class="container header__contacts">
+                <li class="header__contacts-item">
+                    <button class="header__contacts-name" type="button" data-path="tel">
+                        <svg class="header__contacts-svg">
+                            <use xlink:href="./images/svg/sprite.svg#phone"></use>
+                        </svg>
+                        <span>Телефоны для связи</span>
+                        <svg class="header__contacts-arrow">
+                            <use xlink:href="./images/svg/sprite.svg#arrow-menu"></use>
+                        </svg>
+                    </button>
+                    <ul class="header__contacts-list" data-target="tel">
+                        <li class="header__contacts-subitem">
+                            <a class="header__contacts-tel" href="tel:+78463004411">+7 (846) 300-44-11</a>
+                        </li>
+                        <li class="header__contacts-subitem">
+                            <a class="header__contacts-tel" href="tel:+78482229041">+7 (848) 222-90-41</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__contacts-item">
+                    <button class="header__contacts-name" type="button" data-path="adress">
+                        <svg class="header__contacts-svg">
+                            <use xlink:href="./images/svg/sprite.svg#adress"></use>
+                        </svg>
+                        <span>Улица: Пушкина 27</span>
+                        <svg class="header__contacts-arrow">
+                            <use xlink:href="./images/svg/sprite.svg#arrow-menu"></use>
+                        </svg>
+                    </button>
+                    <ul class="header__contacts-list" data-target="adress">
+                        <li class="header__contacts-subitem">
+                            <p class="header__contacts-adress">Улица: Державина 28</p>
+                        </li>
+                        <li class="header__contacts-subitem">
+                            <p class="header__contacts-adress">Улица: Дельвига 29</p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__contacts-item">
+                    <button class="header__contacts-name" type="button" data-path="hours">
+                        <svg class="header__contacts-svg">
+                            <use xlink:href="./images/svg/sprite.svg#hours"></use>
+                        </svg>
+                        <span>Режим работы</span>
+                        <svg class="header__contacts-arrow">
+                            <use xlink:href="./images/svg/sprite.svg#arrow-menu"></use>
+                        </svg>
+                    </button>
+                    <ul class="header__contacts-list" data-target="hours">
+                        <li class="header__contacts-subitem">
+                            <p class="header__contacts-hours">ПН-ПТ: 9:00 - 18:00</p>
+                        </li>
+                        <li class="header__contacts-subitem">
+                            <p class="header__contacts-hours">СБ: 9:00 - 14:00</p>
+                        </li>
+                        <li class="header__contacts-subitem">
+                            <p class="header__contacts-hours">ВС: выходной</p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__contacts-item">
+                    <a class="header__contacts-mail" href="mailto:example@mail.ru">
+                        <svg class="header__contacts-svg">
+                            <use xlink:href="./images/svg/sprite.svg#mail"></use>
+                        </svg>
+                        example@mail.ru
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="container header__bottom">
+            <button class="header__mobile" tabindex="0" aria-label="Кнопка для мобильного">
+                <svg class="header__mobile-svg" viewbox="0 0 16 16">
+                    <use xlink:href="./images/svg/sprite.svg#tel-mobile"></use>
+                </svg>
+            </button>
+            <a class="header__logo" href="">
+                <img src="./images/logo.png" alt="Компания SPM">
+            </a>
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="">Lorem ipsum</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="">Dolor sit amet</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="">Donec sodales</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="container-mobile header__contacts-mobile">
+                <li class="header__contacts-item">
+                    <button class="header__contacts-name" type="button" data-path="tel-mobile">
+                        <svg class="header__contacts-svg">
+                            <use xlink:href="./images/svg/sprite.svg#phone"></use>
+                        </svg>
+                        <span>Телефоны для связи</span>
+                        <svg class="header__contacts-arrow">
+                            <use xlink:href="./images/svg/sprite.svg#arrow-menu"></use>
+                        </svg>
+                    </button>
+                    <ul class="header__contacts-list" data-target="tel-mobile">
+                        <li class="header__contacts-subitem">
+                            <a class="header__contacts-tel" href="tel:+78463004411">+7 (846) 300-44-11</a>
+                        </li>
+                        <li class="header__contacts-subitem">
+                            <a class="header__contacts-tel" href="tel:+78482229041">+7 (848) 222-90-41</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__contacts-item">
+                    <button class="header__contacts-name" type="button" data-path="adress-mobile">
+                        <svg class="header__contacts-svg">
+                            <use xlink:href="./images/svg/sprite.svg#adress"></use>
+                        </svg>
+                        <span>Улица: Пушкина 27</span>
+                        <svg class="header__contacts-arrow">
+                            <use xlink:href="./images/svg/sprite.svg#arrow-menu"></use>
+                        </svg>
+                    </button>
+                    <ul class="header__contacts-list" data-target="adress-mobile">
+                        <li class="header__contacts-subitem">
+                            <p class="header__contacts-adress">Улица: Державина 28</p>
+                        </li>
+                        <li class="header__contacts-subitem">
+                            <p class="header__contacts-adress">Улица: Дельвига 29</p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__contacts-item">
+                    <button class="header__contacts-name" type="button" data-path="hours-mobile">
+                        <svg class="header__contacts-svg">
+                            <use xlink:href="./images/svg/sprite.svg#hours"></use>
+                        </svg>
+                        <span>Режим работы</span>
+                        <svg class="header__contacts-arrow">
+                            <use xlink:href="./images/svg/sprite.svg#arrow-menu"></use>
+                        </svg>
+                    </button>
+                    <ul class="header__contacts-list" data-target="hours">
+                        <li class="header__contacts-subitem">
+                            <p class="header__contacts-hours">ПН-ПТ: 9:00 - 18:00</p>
+                        </li>
+                        <li class="header__contacts-subitem">
+                            <p class="header__contacts-hours">СБ: 9:00 - 14:00</p>
+                        </li>
+                        <li class="header__contacts-subitem">
+                            <p class="header__contacts-hours">ВС: выходной</p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__contacts-item">
+                    <a class="header__contacts-mail" href="mailto:example@mail.ru">
+                        <svg class="header__contacts-svg">
+                            <use xlink:href="./images/svg/sprite.svg#mail"></use>
+                        </svg>
+                        example@mail.ru
+                    </a>
+                </li>
+            </ul>
+            <button class="header__btn" type="button">
+                Aenean commodo
+            </button>
+            <button class="header__burger" tabindex="0" aria-label="Меню для мобильного">
+                <svg class="header__burger-svg" viewbox="0 0 38 38">
+                    <use xlink:href="./images/svg/sprite.svg#burger"></use>
+                </svg>
+            </button>
+            <button class="header__burger-x">
+                <svg class="header__burger-x-svg" viewbox="0 0 29 29">
+                    <use xlink:href="./images/svg/sprite.svg#burger-x"></use>
+                </svg>
+            </button>
+        </div>
+    </header>
+    <main class="main">
+        <section class="section-hero">
+            <div class="container section-hero__content">
+                <div class="section-hero__wrap">
+                    <h1 class="section-hero__h1">Lorem ipsum dolor sit
+                        amet Aenean commodo
+                    </h1>
+                    <p class="section-hero__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                        commodo<br>
+                        <span>ligula eget dolor</span>
+                    </p>
+                    <button class="section-hero__btn" type="button">
+                        Aenean commodo
+                    </button>
+                    <p class="section-hero__action">
+                        Оставьте заявку на бесплатную консультацию
+                    </p>
+                </div>
+                <picture class="section-hero__picture">
+                    <source srcset="./images/femida-390.png" media="(max-width:390px)">
+                    <source srcset="./images/femida-768.png" media="(max-width:768px)">
+                    <img class="section-hero__picture-img" src="./images/femida.png" alt="Femida" title="Artemida">
+                </picture>
+            </div>
+        </section>
+        <section class="section-offer">
+            <div class="container section-offer__content">
+                <h2 class="section-offer__h2">
+                    Lorem ipsum
+                </h2>
+                <ol class="section-offer__list">
+                    <li class="section-offer__item">
+                        <h3 class="section-offer__h3">
+                            Lorem ipsum
+                        </h3>
+                        <p class="section-offer__item-desc">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor
+                        </p>
+                    </li>
+                    <li class="section-offer__item">
+                        <h3 class="section-offer__h3">
+                            Lorem ipsum
+                        </h3>
+                        <p class="section-offer__item-desc">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                        </p>
+                    </li>
+                    <li class="section-offer__item">
+                        <h3 class="section-offer__h3">
+                            Lorem ipsum
+                        </h3>
+                        <p class="section-offer__item-desc">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                        </p>
+                    </li>
+                    <li class="section-offer__item">
+                        <h3 class="section-offer__h3">
+                            Lorem ipsum
+                        </h3>
+                        <p class="section-offer__item-desc">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                        </p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+        <section class="section-we">
+            <div class="container section-we__content">
+                <h2 class="section-we__h2">
+                    Dolor sit amet
+                </h2>
+                <div class="swiper section-we__swiper">
+                    <div class="swiper-wrapper section-we__wrapper">
+                        <div class="swiper-slide section-we__slide">
+                            <div class="section-we__svg">
+                                <svg>
+                                    <use xlink:href="./images/svg/sprite.svg#protected"></use>
+                                </svg>
+                            </div>
+                            <h3 class="section-we__h3">
+                                Lorem ipsum
+                            </h3>
+                            <p class="section-we__desc">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                                nascetur ridiculus mus.
+                            </p>
+                        </div>
+                        <div class="swiper-slide section-we__slide">
+                            <div class="section-we__svg">
+                                <svg>
+                                    <use xlink:href="./images/svg/sprite.svg#auction"></use>
+                                </svg>
+                            </div>
+                            <h3 class="section-we__h3">
+                                Lorem ipsum
+                            </h3>
+                            <p class="section-we__desc">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                                nascetur ridiculus mus.
+                            </p>
+                        </div>
+                        <div class="swiper-slide section-we__slide">
+                            <div class="section-we__svg">
+                                <svg>
+                                    <use xlink:href="./images/svg/sprite.svg#legal-document"></use>
+                                </svg>
+                            </div>
+                            <h3 class="section-we__h3">
+                                Lorem ipsum
+                            </h3>
+                            <p class="section-we__desc">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                                nascetur ridiculus mus.
+                            </p>
+                        </div>
+                        <div class="swiper-slide section-we__slide">
+                            <div class="section-we__svg">
+                                <svg>
+                                    <use xlink:href="./images/svg/sprite.svg#protected"></use>
+                                </svg>
+                            </div>
+                            <h3 class="section-we__h3">
+                                Lorem ipsum
+                            </h3>
+                            <p class="section-we__desc">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                                nascetur ridiculus mus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev section-we__prev">
+                    <svg class="section-we__svg">
+                        <use xlink:href="./images/svg/sprite.svg#we-arrow"></use>
+                    </svg>
+                </div>
+                <div class="swiper-button-next section-we__next">
+                    <svg class="section-we__svg">
+                        <use xlink:href="./images/svg/sprite.svg#we-arrow"></use>
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <section class="section-cards">
+            <div class="container section-cards__content">
+                <h2 class="section-cards__h2">
+                    Donec sodales
+                </h2>
+                <div class="swiper section-cards__swiper">
+                    <div class="swiper-wrapper section-cards__wrapper">
+                        <div class="swiper-slide section-cards__card" tabindex="0">
+                            <picture class="section-cards__picture">
+                                <img class="section-cards__picture-img" src="./images/artemida.jpg" alt="Artemida"
+                                    title="Artemida">
+                            </picture>
+                            <div class="section-cards__wrap">
+                                <h3 class="section-cards__h3">cursus nunc</h3>
+                                <h4 class="section-cards__h4">blandit vel</h4>
+                                <div class="section-cards__in">
+                                    <p class="section-cards__desc">Curabitur ullamcorper</p>
+                                    <ul class="section-cards__items">
+                                        <li class="section-cards__item-value">
+                                            46/48
+                                        </li>
+                                        <li class="section-cards__item-value">
+                                            48/50
+                                        </li>
+                                        <li class="section-cards__item-value">
+                                            50/52
+                                        </li>
+                                        <li class="section-cards__item-value">
+                                            52/54
+                                        </li>
+                                    </ul>
+                                    <ul class="section-cards__btns">
+                                        <li class="section-cards__btns-item">
+                                            <button class="section-cards__btn">
+                                                Etiam
+                                            </button>
+                                        </li>
+                                        <li class="section-cards__btns-item">
+                                            <button class="section-cards__btn section-cards__btn_alt">
+                                                rhoncus
+                                            </button>
+                                        </li>
+                                    </ul>
+                                    <div class="section-cards__price">
+                                        999 <span>$</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide section-cards__card" tabindex="0">
+                            <picture class="section-cards__picture">
+                                <img class="section-cards__picture-img" src="./images/artemida2.jpg" alt="Artemida"
+                                    title="Artemida">
+                            </picture>
+                            <div class="section-cards__wrap">
+                                <h3 class="section-cards__h3">augue velit</h3>
+                                <h4 class="section-cards__h4">luctus pulvinar</h4>
+                                <div class="section-cards__in">
+                                    <p class="section-cards__desc">Curabitur ullamcorper</p>
+                                    <ul class="section-cards__items">
+                                        <li class="section-cards__item-value">
+                                            46/48
+                                        </li>
+                                        <li class="section-cards__item-value">
+                                            48/50
+                                        </li>
+                                        <li class="section-cards__item-value">
+                                            50/52
+                                        </li>
+                                        <li class="section-cards__item-value">
+                                            52/54
+                                        </li>
+                                    </ul>
+                                    <ul class="section-cards__btns">
+                                        <li class="section-cards__btns-item">
+                                            <button class="section-cards__btn">
+                                                Etiam
+                                            </button>
+                                        </li>
+                                        <li class="section-cards__btns-item">
+                                            <button class="section-cards__btn section-cards__btn_alt">
+                                                rhoncus
+                                            </button>
+                                        </li>
+                                    </ul>
+                                    <div class="section-cards__price">
+                                        989 <span>$</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide section-cards__card" tabindex="0">
+                            <picture class="section-cards__picture">
+                                <img class="section-cards__picture-img" src="./images/athena.jpg" alt="Athena"
+                                    title="Athena">
+                            </picture>
+                            <div class="section-cards__wrap">
+                                <h3 class="section-cards__h3">bibendum sodales</h3>
+                                <h4 class="section-cards__h4">hendrerit id</h4>
+                                <div class="section-cards__in">
+                                    <p class="section-cards__desc">Curabitur ullamcorper</p>
+                                    <ul class="section-cards__items">
+                                        <li class="section-cards__item-value">
+                                            46/48
+                                        </li>
+                                        <li class="section-cards__item-value">
+                                            48/50
+                                        </li>
+                                        <li class="section-cards__item-value">
+                                            50/52
+                                        </li>
+                                        <li class="section-cards__item-value">
+                                            52/54
+                                        </li>
+                                    </ul>
+                                    <ul class="section-cards__btns">
+                                        <li class="section-cards__btns-item">
+                                            <button class="section-cards__btn">
+                                                Etiam
+                                            </button>
+                                        </li>
+                                        <li class="section-cards__btns-item">
+                                            <button class="section-cards__btn section-cards__btn_alt">
+                                                rhoncus
+                                            </button>
+                                        </li>
+                                    </ul>
+                                    <div class="section-cards__price">
+                                        997 <span>$</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide section-cards__card" tabindex="0">
+                            <picture class="section-cards__picture">
+                                <img class="section-cards__picture-img" src="./images/athena.jpg" alt="Athena"
+                                    title="Athena">
+                            </picture>
+                            <div class="section-cards__wrap">
+                                <h3 class="section-cards__h3">bibendum sodales</h3>
+                                <h4 class="section-cards__h4">hendrerit id</h4>
+                                <div class="section-cards__in">
+                                    <p class="section-cards__desc">Curabitur ullamcorper</p>
+                                    <ul class="section-cards__items">
+                                        <li class="section-cards__item-value">
+                                            46/48
+                                        </li>
+                                        <li class="section-cards__item-value">
+                                            48/50
+                                        </li>
+                                        <li class="section-cards__item-value">
+                                            50/52
+                                        </li>
+                                        <li class="section-cards__item-value">
+                                            52/54
+                                        </li>
+                                    </ul>
+                                    <ul class="section-cards__btns">
+                                        <li class="section-cards__btns-item">
+                                            <button class="section-cards__btn">
+                                                Etiam
+                                            </button>
+                                        </li>
+                                        <li class="section-cards__btns-item">
+                                            <button class="section-cards__btn section-cards__btn_alt">
+                                                rhoncus
+                                            </button>
+                                        </li>
+                                    </ul>
+                                    <div class="section-cards__price">
+                                        997 <span>$</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide section-cards__card" tabindex="0">
+                            <picture class="section-cards__picture">
+                                <img class="section-cards__picture-img" src="./images/artemida.jpg" alt="Artemida"
+                                    title="Artemida">
+                            </picture>
+                            <div class="section-cards__wrap">
+                                <h3 class="section-cards__h3">augue velit</h3>
+                                <h4 class="section-cards__h4">hendrerit id</h4>
+                                <div class="section-cards__in">
+                                    <p class="section-cards__desc">Curabitur ullamcorper</p>
+                                    <ul class="section-cards__items">
+                                        <li class="section-cards__item-value">
+                                            46/48
+                                        </li>
+                                        <li class="section-cards__item-value">
+                                            48/50
+                                        </li>
+                                        <li class="section-cards__item-value">
+                                            50/52
+                                        </li>
+                                        <li class="section-cards__item-value">
+                                            52/54
+                                        </li>
+                                    </ul>
+                                    <ul class="section-cards__btns">
+                                        <li class="section-cards__btns-item">
+                                            <button class="section-cards__btn">
+                                                Etiam
+                                            </button>
+                                        </li>
+                                        <li class="section-cards__btns-item">
+                                            <button class="section-cards__btn section-cards__btn_alt">
+                                                rhoncus
+                                            </button>
+                                        </li>
+                                    </ul>
+                                    <div class="section-cards__price">
+                                        999 <span>$</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__content">
+            <div class="footer__wrap">
+                <a class="footer__logo" href="">
+                    <img src="./images/logo-footer.png" alt="Компания SPM">
+                </a>
+                <p class="footer__desc">
+                    Lörem ipsum od ohet dilogi. Bell trabel, samuligt, ohöbel utom diska. Jinesade bel när feras
+                    redorade i
+                    belogi. FAR paratyp i muvåning, och pesask vyfisat. Viktiga poddradio har un mad och inde.
+                </p>
+                <ul class="footer__social">
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="" title="Запрещён на территории РФ">
+                            <svg class="footer__social-svg">
+                                <use xlink:href="./images/svg/sprite.svg#fb"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="" title="Запрещён на территории РФ">
+                            <svg class="footer__social-svg">
+                                <use xlink:href="./images/svg/sprite.svg#tw"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="">
+                            <svg class="footer__social-svg">
+                                <use xlink:href="./images/svg/sprite.svg#li"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p class="footer__copyright">
+                © ООО “Lorem ipsum dolor”, 2023. Все права защищены.
+            </p>
+            <nav class="footer__nav">
+                <h2 class="footer__nav-h2">
+                    Page
+                </h2>
+                <ul class="footer__menu">
+                    <li class="footer__menu-item">
+                        <a class="footer__menu-link" href="">Lorem ipsum</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a class="footer__menu-link" href="">Dolor sit amet</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a class="footer__menu-link" href="">Donec sodales</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer__map">
+                <h2 class="footer__map-h2">
+                    Maps Location
+                </h2>
+                <div class="footer__map-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.4577428470816!2d-73.567810736469!3d45.500863349542804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a5b5ef5d069%3A0x397b46629fe124ad!2sRobert-Bourassa%20%2F%20De%20La%20Gaucheti%C3%A8re!5e0!3m2!1sru!2sru!4v1748250426476!5m2!1sru!2sru"
+                        width="378" height="230" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <a class="footer__logo-spm" href="">
+                <img src="./images/logo-footer-spm.png" alt="Компания SPM">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
