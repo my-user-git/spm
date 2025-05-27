@@ -640,7 +640,7 @@ input {
 .section-offer__item:nth-child(1) {
   grid-area: left-top;
   color: var(--white);
-  background: url("/images/offer-magenta-bg.png") center top no-repeat transparent;
+  background: url("../images/offer-magenta-bg.png") center top no-repeat transparent;
   background-size: cover;
 }
 .section-offer__item:nth-child(2) {
@@ -656,7 +656,7 @@ input {
 .section-offer__item:nth-child(4) {
   grid-area: right-bottom;
   color: var(--white);
-  background: url("/images/offer-magenta-bg.png") center top no-repeat transparent;
+  background: url("../images/offer-magenta-bg.png") center top no-repeat transparent;
   background-size: cover;
 }
 

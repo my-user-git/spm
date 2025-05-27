@@ -1,6 +1,6 @@
 @mixin section-offer-item-bg {
     color: var(--white);
-    background: url('/images/offer-magenta-bg.png') center top no-repeat transparent;
+    background: url("../images/offer-magenta-bg.png") center top no-repeat transparent;
     background-size: cover;
 }
 
