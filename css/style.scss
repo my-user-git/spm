@@ -51,7 +51,8 @@ input {
     cursor: pointer;
 }
 
-.container, .container-mobile {
+.container,
+.container-mobile {
     position: relative;
     max-width: var(--containerMaxWidth);
     margin: 0 auto;
@@ -266,12 +267,10 @@ input {
                 & .header__contacts-list {
                     position: relative;
                     background-color: transparent;
-
-                    & .header__contacts-subitem a,
-                    & .header__contacts-subitem p {
-                        color: var(--blue-a5);
-                    }
                 }
+            }
+            & a {
+                color: var(--blue-a5);
             }
         }
     }
@@ -722,11 +721,19 @@ input {
     &__next {
         @include we-arrow;
         right: 12px;
+
+        @media (max-width: 576px) {
+            display: none;
+        }
     }
 
     &__prev {
         @include we-arrow;
         left: 12px;
+
+        @media (max-width: 576px) {
+            display: none;
+        }
 
         & svg {
             transform: rotate(180deg);

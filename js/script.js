@@ -5,7 +5,14 @@ const swiperMe = new Swiper('.section-we__swiper', {
 
     breakpoints: {
 
-        390: {
+        0: {
+            slidesPerView: 1.3,
+            spaceBetween: 10,
+            allowTouchMove: true,
+            navigation: false,
+        },
+
+        576: {
             slidesPerView: 1,
         },
 
@@ -36,7 +43,14 @@ const swiperCards = new Swiper('.section-cards__swiper', {
 
     breakpoints: {
 
-        768: {
+        0: {
+            slidesPerView: 1.3,
+            spaceBetween: 10,
+            allowTouchMove: true,
+            navigation: false,
+        },
+
+        576: {
             slidesPerView: 2,
             spaceBetween: 20
         },
