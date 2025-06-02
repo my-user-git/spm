@@ -126,6 +126,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.addEventListener('click', e => {
         const target = e.target
         if (!target.closest('.header__burger') && !target.closest('.header__burger-x') && !target.closest('.header__menu-link') && !target.closest('.header__contacts-name')) {
+            document.querySelector('.header__content').classList.remove('header__content-active');
             document.querySelector('.header__nav').classList.remove('header__nav-active');
             document.querySelector('.header__contacts').classList.remove('header__contacts-active');
             document.querySelector('.header__burger').classList.remove('header__burger-hidden');
