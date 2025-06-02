@@ -98,6 +98,10 @@ input {
         &-active {
             row-gap: 34px;
             padding-bottom: 39px;
+
+            & .header__contacts-list-active {
+                position: relative;
+            } 
         }
     }
 
@@ -220,7 +224,6 @@ input {
             transition: max-height .5s ease-in-out, opacity .5s ease-in-out;
 
             &-active {
-                position: relative;
                 opacity: 1;
                 z-index: 10;
             }
