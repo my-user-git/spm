@@ -145,7 +145,7 @@ input {
 }
 .header__content {
   display: grid;
-  grid-template-areas: "contacts contacts contacts" "logo nav btn";
+  grid-template-areas: "nav-contacts nav-contacts nav-contacts" "logo nav btn";
   grid-template-columns: min-content 1fr max-content;
   align-items: center;
   -moz-column-gap: 3.87%;
