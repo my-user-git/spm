@@ -90,8 +90,14 @@ input {
                 ". nav ."
                 ". nav-contacts .";
             grid-template-columns: 44px 1fr 44px;
+            row-gap: 0;
             text-align: center;
             padding-top: 11px;
+        }
+
+        &-active {
+            row-gap: 34px;
+            padding-bottom: 39px;
         }
     }
 

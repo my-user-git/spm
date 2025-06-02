@@ -110,6 +110,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     document.querySelector('.header__burger').addEventListener('click', function () {
+        document.querySelector('.header__content').classList.add('header__content-active');
         document.querySelector('.header__nav').classList.add('header__nav-active');
         document.querySelector('.header__contacts').classList.add('header__contacts-active');
         document.querySelector('.header__burger').classList.add('header__burger-hidden');
