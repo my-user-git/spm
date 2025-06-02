@@ -110,22 +110,23 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     document.querySelector('.header__burger').addEventListener('click', function () {
-        document.querySelector('.header__top').classList.add('header__top-active');
-        document.querySelector('.header__contacts-mobile').classList.add('header__contacts-mobile-active');
         document.querySelector('.header__nav').classList.add('header__nav-active');
-        document.querySelector('.header__bottom').classList.add('header__bottom-active');
+        document.querySelector('.header__contacts').classList.add('header__contacts-active');
+        document.querySelector('.header__burger').classList.add('header__burger-hidden');
+        document.querySelector('.header__burger-x').classList.add('header__burger-x-active');
     });
     document.querySelector('.header__burger-x').addEventListener('click', function () {
-        document.querySelector('.header__bottom').classList.remove('header__bottom-active');
         document.querySelector('.header__nav').classList.remove('header__nav-active');
+        document.querySelector('.header__contacts').classList.remove('header__contacts-active');
+        document.querySelector('.header__burger').classList.remove('header__burger-hidden');
+        document.querySelector('.header__burger-x').classList.remove('header__burger-x-active');
 
     });
     document.addEventListener('click', e => {
         const target = e.target
-        if (!target.closest('.header__burger') && !target.closest('.header__burger-x')) {
-            document.querySelector('.header__top').classList.remove('header__top-active');
-            document.querySelector('.header__bottom').classList.remove('header__bottom-active');
+        if (!target.closest('.header__burger') && !target.closest('.header__burger-x') && !target.closest('.header__menu-link') && !target.closest('.header__contacts-name')) {
             document.querySelector('.header__nav').classList.remove('header__nav-active');
+            document.querySelector('.header__contacts').classList.remove('header__contacts-active');
         }
     });
 });

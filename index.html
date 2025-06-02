@@ -13,8 +13,8 @@
 
 <body>
     <header class="header">
-        <div class="header__top">
-            <ul class="container header__contacts">
+        <div class="container header__content">
+            <ul class="header__contacts">
                 <li class="header__contacts-item">
                     <button class="header__contacts-name" type="button" data-path="tel">
                         <svg class="header__contacts-svg">
@@ -84,8 +84,6 @@
                     </a>
                 </li>
             </ul>
-        </div>
-        <div class="container header__bottom">
             <button class="header__mobile" tabindex="0" aria-label="Кнопка для мобильного">
                 <svg class="header__mobile-svg" viewbox="0 0 16 16">
                     <use xlink:href="./images/svg/sprite.svg#tel-mobile"></use>
@@ -107,76 +105,6 @@
                     </li>
                 </ul>
             </nav>
-            <ul class="container-mobile header__contacts-mobile">
-                <li class="header__contacts-item">
-                    <button class="header__contacts-name" type="button" data-path="tel-mobile">
-                        <svg class="header__contacts-svg">
-                            <use xlink:href="./images/svg/sprite.svg#phone"></use>
-                        </svg>
-                        <span>Телефоны для связи</span>
-                        <svg class="header__contacts-arrow">
-                            <use xlink:href="./images/svg/sprite.svg#arrow-menu"></use>
-                        </svg>
-                    </button>
-                    <ul class="header__contacts-list" data-target="tel-mobile">
-                        <li class="header__contacts-subitem">
-                            <a class="header__contacts-tel" href="tel:+78463004411">+7 (846) 300-44-11</a>
-                        </li>
-                        <li class="header__contacts-subitem">
-                            <a class="header__contacts-tel" href="tel:+78482229041">+7 (848) 222-90-41</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="header__contacts-item">
-                    <button class="header__contacts-name" type="button" data-path="adress-mobile">
-                        <svg class="header__contacts-svg">
-                            <use xlink:href="./images/svg/sprite.svg#adress"></use>
-                        </svg>
-                        <span>Улица: Пушкина 27</span>
-                        <svg class="header__contacts-arrow">
-                            <use xlink:href="./images/svg/sprite.svg#arrow-menu"></use>
-                        </svg>
-                    </button>
-                    <ul class="header__contacts-list" data-target="adress-mobile">
-                        <li class="header__contacts-subitem">
-                            <p class="header__contacts-adress">Улица: Державина 28</p>
-                        </li>
-                        <li class="header__contacts-subitem">
-                            <p class="header__contacts-adress">Улица: Дельвига 29</p>
-                        </li>
-                    </ul>
-                </li>
-                <li class="header__contacts-item">
-                    <button class="header__contacts-name" type="button" data-path="hours-mobile">
-                        <svg class="header__contacts-svg">
-                            <use xlink:href="./images/svg/sprite.svg#hours"></use>
-                        </svg>
-                        <span>Режим работы</span>
-                        <svg class="header__contacts-arrow">
-                            <use xlink:href="./images/svg/sprite.svg#arrow-menu"></use>
-                        </svg>
-                    </button>
-                    <ul class="header__contacts-list" data-target="hours">
-                        <li class="header__contacts-subitem">
-                            <p class="header__contacts-hours">ПН-ПТ: 9:00 - 18:00</p>
-                        </li>
-                        <li class="header__contacts-subitem">
-                            <p class="header__contacts-hours">СБ: 9:00 - 14:00</p>
-                        </li>
-                        <li class="header__contacts-subitem">
-                            <p class="header__contacts-hours">ВС: выходной</p>
-                        </li>
-                    </ul>
-                </li>
-                <li class="header__contacts-item">
-                    <a class="header__contacts-mail" href="mailto:example@mail.ru">
-                        <svg class="header__contacts-svg">
-                            <use xlink:href="./images/svg/sprite.svg#mail"></use>
-                        </svg>
-                        example@mail.ru
-                    </a>
-                </li>
-            </ul>
             <button class="header__btn" type="button">
                 Aenean commodo
             </button>
