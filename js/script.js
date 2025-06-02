@@ -117,6 +117,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector('.header__burger-x').classList.add('header__burger-x-active');
     });
     document.querySelector('.header__burger-x').addEventListener('click', function () {
+        document.querySelector('.header__content').classList.remove('header__content-active');
         document.querySelector('.header__nav').classList.remove('header__nav-active');
         document.querySelector('.header__contacts').classList.remove('header__contacts-active');
         document.querySelector('.header__burger').classList.remove('header__burger-hidden');
